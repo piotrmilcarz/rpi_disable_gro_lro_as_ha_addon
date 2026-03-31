@@ -1,6 +1,6 @@
 FROM alpine:3.19
 
-RUN apk add --no-cache ethtool iproute2
+RUN apk add --no-cache ethtool iproute2 jq
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
